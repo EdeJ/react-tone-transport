@@ -1,0 +1,89 @@
+<lesson>
+    <name>88 Michael Row the Boat</name>
+    <folder>88-michael-row-the-boat</folder>
+    <tempo>116</tempo>    <!-- in bpm  -->
+    <timeSignature>4</timeSignature>    <!-- numerator over 4. For example 4/4 would be just 4 and 6/8 would be 3 -->
+    <clickSound>click.mp3</clickSound>
+    <frase>        <!-- er zit altijd een extra maat aftellen voor de allerseerste frase-->
+        <id>0</id>
+        <tempo>116</tempo>
+        <click>1</click>
+        <offset>            <!-- Audio offset BARS:QUARTERS : SIXTEENTHS -->
+            <bars>1</bars>
+            <quarters>2</quarters>
+            <sixteenths>0</sixteenths>
+        </offset>
+        <countingVoice>            <!-- overlapt met offset-->
+            <count>1</count>
+            <count>2</count>
+        </countingVoice>
+        <startFromBar>0</startFromBar>        <!-- (visuals) Alles begint vanaf maar 0 -->
+        <endOnBar>2</endOnBar>
+        <studyReplay>1</studyReplay>        <!-- int. voor het aantal keer herhalen met alleen de click. 0 (default) is niet herhalen. -->
+        <loopStart>0</loopStart>        <!-- moet gezet worden, ook als er geen loop is. dit is ook de beginmaat voor de pointeer na een studyReplay.-->
+        <loopEnd>2</loopEnd>
+        <loops>0</loops>
+        <audioFile>0-2.mp3</audioFile>
+        <sampleStart>0</sampleStart>        <!-- The offset from the beginning of the sample to start at. -->
+        <sampleStop>0</sampleStop>        <!-- 0:0:0 is relative to sampleStart-->
+        <musicXml>0-2.musicxml</musicXml>
+        <svgFile>0-2-1.svg</svgFile>
+        <!-- <message>next</message> -->
+    </frase>
+    <frase>        <!-- er zit altijd een extra maat aftellen voor de allerseerste frase-->
+        <id>1</id>
+        <tempo>80</tempo>
+        <click>1</click>
+        <offset>            <!-- Audio offset BARS:QUARTERS : SIXTEENTHS -->
+            <bars>1</bars>
+            <quarters>2</quarters>
+            <sixteenths>0</sixteenths>
+        </offset>
+        <countingVoice>            <!-- overlapt met offset-->
+            <count>1</count>
+            <count>2</count>
+        </countingVoice>
+        <startFromBar>0</startFromBar>        <!-- (visuals) Alles begint vanaf maar 0 -->
+        <endOnBar>4</endOnBar>
+        <studyReplay>1</studyReplay>        <!-- int. voor het aantal keer herhalen met alleen de click. 0 (default) is niet herhalen. -->
+        <loopStart>0</loopStart>        <!-- moet gezet worden, ook als er geen loop is. dit is ook de beginmaat voor de pointeer na een studyReplay.-->
+        <loopEnd>4</loopEnd>
+        <loops>2</loops>
+        <audioFile>0-4.mp3</audioFile>
+        <sampleStart>0</sampleStart>        <!-- The offset from the beginning of the sample to start at. -->
+        <sampleStop>0</sampleStop>        <!-- 0:0:0 is relative to sampleStart-->
+        <musicXml>0-4.musicxml</musicXml>
+        <svgFile>0-4-1.svg</svgFile>
+        <message>next</message>
+    </frase>
+    <frase>        <!-- er zit altijd een extra maat aftellen voor de allerseerste frase-->
+        <id>2</id>
+        <tempo>116</tempo>
+        <click>1</click>
+        <offset>            <!-- Audio offset BARS:QUARTERS : SIXTEENTHS -->
+            <bars>1</bars>
+            <quarters>2</quarters>
+            <sixteenths>0</sixteenths>
+        </offset>
+        <countingVoice>            <!-- overlapt met offset-->
+            <count>1</count>
+            <count>2</count>
+        </countingVoice>
+        <startFromBar>0</startFromBar>        <!-- (visuals) Alles begint vanaf maar 0 -->
+        <endOnBar>4</endOnBar>
+        <studyReplay>1</studyReplay>        <!-- int. voor het aantal keer herhalen met alleen de click. 0 (default) is niet herhalen. -->
+        <loopStart>0</loopStart>        <!-- moet gezet worden, ook als er geen loop is. dit is ook de beginmaat voor de pointeer na een studyReplay.-->
+        <loopEnd>4</loopEnd>
+        <loops>2</loops>
+        <audioFile>5.mp3</audioFile>
+        <sampleStart>0</sampleStart>        <!-- The offset from the beginning of the sample to start at. -->
+        <sampleStop>0</sampleStop>        <!-- 0:0:0 is relative to sampleStart-->
+        <musicXml>0-4.musicxml</musicXml>
+        <svgFile>0-4-1.svg</svgFile>
+        <message>next</message>
+    </frase>
+
+
+
+
+</lesson>

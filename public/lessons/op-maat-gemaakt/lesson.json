@@ -1,0 +1,243 @@
+{
+    "name": "Op Maat Gemaakt",
+    "folder": "op-maat-gemaakt",
+    "tempo": "80",
+    "comment": [{}, {}],
+    "timeSignature": "4",
+    "clickSound": "click.mp3",
+    "frase": [{
+        "comment": [{}, {}, {}, {}, {}, {}],
+        "id": "0",
+        "click": "1",
+        "offset": {
+            "comment": {},
+            "bars": "1",
+            "quarters": "0",
+            "sixteenths": "0"
+        },
+        "countingVoice": {
+            "comment": {},
+            "count": ["1", "2"]
+        },
+        "startFromBar": "0",
+        "endOnBar": "2",
+        "studyReplay": "1",
+        "loopStart": "0",
+        "loopEnd": "2",
+        "loops": "1",
+        "audioFile": "0-2.mp3",
+        "sampleStart": "0",
+        "sampleStop": "0",
+        "musicXml": "0-2.musicxml",
+        "svgFile": "0-2-1.svg",
+        "message": "next"
+    }, {
+        "comment": [{}, {}, {}, {}, {}, {}, {}],
+        "id": "1",
+        "click": "1",
+        "offset": {
+            "comment": {},
+            "bars": "0",
+            "quarters": "1",
+            "sixteenths": "0"
+        },
+        "countingVoice": {
+            "comment": {},
+            "count": ["1", "2"]
+        },
+        "startFromBar": "0",
+        "endOnBar": "2",
+        "studyReplay": "1",
+        "loopStart": "0",
+        "loopEnd": "2",
+        "loops": "1",
+        "audioFile": "2-4.mp3",
+        "sampleStart": "0",
+        "sampleStop": "0",
+        "musicXml": "2-4.musicxml",
+        "svgFile": "2-4-1.svg",
+        "message": "next"
+    }, {
+        "comment": [{}, {}, {}, {}, {}, {}, {}],
+        "id": "2",
+        "click": "1",
+        "offset": {
+            "comment": {},
+            "bars": "0",
+            "quarters": "1",
+            "sixteenths": "0"
+        },
+        "countingVoice": {
+            "comment": {},
+            "count": ["1", "2"]
+        },
+        "startFromBar": "0",
+        "endOnBar": "4",
+        "studyReplay": "1",
+        "loopStart": "0",
+        "loopEnd": "4",
+        "loops": "1",
+        "audioFile": "0-4.mp3",
+        "sampleStart": "0",
+        "sampleStop": "0",
+        "musicXml": "0-4.musicxml",
+        "svgFile": "0-4-1.svg",
+        "message": "next"
+    }, {
+        "comment": [{}, {}, {}, {}, {}, {}, {}],
+        "id": "3",
+        "click": "1",
+        "offset": {
+            "comment": {},
+            "bars": "0",
+            "quarters": "1",
+            "sixteenths": "0"
+        },
+        "countingVoice": {
+            "comment": {},
+            "count": ["1", "2"]
+        },
+        "startFromBar": "0",
+        "endOnBar": "2",
+        "studyReplay": "1",
+        "loopStart": "0",
+        "loopEnd": "2",
+        "loops": "1",
+        "audioFile": "4-6.mp3",
+        "sampleStart": "0",
+        "sampleStop": "0",
+        "musicXml": "4-6.musicxml",
+        "svgFile": "4-6-1.svg",
+        "message": "next"
+    }, {
+        "comment": [{}, {}, {}, {}, {}, {}, {}],
+        "id": "4",
+        "click": "1",
+        "offset": {
+            "comment": {},
+            "bars": "0",
+            "quarters": "2",
+            "sixteenths": "0"
+        },
+        "countingVoice": {
+            "comment": {},
+            "count": ["1", "2"]
+        },
+        "startFromBar": "0",
+        "endOnBar": "2",
+        "studyReplay": "1",
+        "loopStart": "0",
+        "loopEnd": "2",
+        "loops": "1",
+        "audioFile": "6-8.mp3",
+        "sampleStart": "0",
+        "sampleStop": "0",
+        "musicXml": "6-8.musicxml",
+        "svgFile": "6-8-1.svg",
+        "message": "next"
+    }, {
+        "comment": [{}, {}, {}, {}, {}, {}, {}],
+        "id": "5",
+        "click": "1",
+        "offset": {
+            "comment": {},
+            "bars": "0",
+            "quarters": "1",
+            "sixteenths": "0"
+        },
+        "countingVoice": {
+            "comment": {},
+            "count": ["1", "2"]
+        },
+        "startFromBar": "0",
+        "endOnBar": "4",
+        "studyReplay": "1",
+        "loopStart": "0",
+        "loopEnd": "4",
+        "loops": "1",
+        "audioFile": "4-8.mp3",
+        "sampleStart": "0",
+        "sampleStop": "0",
+        "musicXml": "4-8.musicxml",
+        "svgFile": "4-8-1.svg",
+        "message": "next"
+    }, {
+        "comment": [{}, {}, {}, {}, {}, {}, {}],
+        "id": "6",
+        "click": "1",
+        "offset": {
+            "comment": {},
+            "bars": "0",
+            "quarters": "1",
+            "sixteenths": "0"
+        },
+        "countingVoice": {
+            "comment": {},
+            "count": ["1", "2"]
+        },
+        "startFromBar": "0",
+        "endOnBar": "4",
+        "studyReplay": "1",
+        "loopStart": "0",
+        "loopEnd": "4",
+        "loops": "1",
+        "audioFile": "0-4.mp3",
+        "sampleStart": "0",
+        "sampleStop": "0",
+        "musicXml": "0-4.musicxml",
+        "svgFile": "0-4-1.svg",
+        "message": "next"
+    }, {
+        "comment": [{}, {}, {}, {}, {}, {}, {}],
+        "id": "7",
+        "click": "1",
+        "offset": {
+            "comment": {},
+            "bars": "0",
+            "quarters": "1",
+            "sixteenths": "0"
+        },
+        "countingVoice": {
+            "comment": {},
+            "count": ["1", "2"]
+        },
+        "startFromBar": "0",
+        "endOnBar": "4",
+        "studyReplay": "1",
+        "loopStart": "0",
+        "loopEnd": "4",
+        "loops": "1",
+        "audioFile": "4-10.mp3",
+        "sampleStart": "0",
+        "sampleStop": "0",
+        "musicXml": "4-10.musicxml",
+        "svgFile": "4-10-1.svg",
+        "message": "next"
+    }, {
+        "comment": [{}, {}, {}, {}, {}, {}, {}],
+        "id": "8",
+        "click": "1",
+        "offset": {
+            "comment": {},
+            "bars": "0",
+            "quarters": "1",
+            "sixteenths": "0"
+        },
+        "countingVoice": {
+            "comment": {},
+            "count": ["1", "2"]
+        },
+        "startFromBar": "0",
+        "endOnBar": "16",
+        "studyReplay": "1",
+        "loopStart": "0",
+        "loopEnd": "16",
+        "loops": "1",
+        "audioFile": "op-maat-gemaakt.mp3",
+        "sampleStart": "0",
+        "sampleStop": "0",
+        "musicXml": "op-maat-gemaakt.musicxml",
+        "svgFile": "op-maat-gemaakt-1.svg",
+        "message": "next"
+    }]
+}
