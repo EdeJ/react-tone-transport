@@ -1,26 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Buffer, Player, Transport } from 'tone';
-import * as Tone from 'tone';
 
-import './App.css';
 
 function App() {
 
   const players = useRef([]);
 
-  const [load, setLoad] = useState(false);
-  const [position, setPosition] = useState('0:0:0');
-  const [bpm, setBpm] = useState(80);
-  const [file, setFile] = useState('http://localhost:3000/lessons/88-michael-row-the-boat/mp3-80-bpm/0-4.mp3');
+
+  const [file, setFile] = useState('./lessons/88-michael-row-the-boat/mp3-80-bpm/0-4.mp3');
 
   const audioBuffers = {};
 
   useEffect(() => {
     console.log("useEffect()");
 
-    const audioFiles = ['http://localhost:3000/lessons/op-maat-gemaakt/mp3-80-bpm/click.mp3',
-      'http://localhost:3000/lessons/88-michael-row-the-boat/mp3-80-bpm/0-4.mp3',
-      'http://localhost:3000/lessons/88-michael-row-the-boat/mp3-116-bpm/0-2.mp3'];
+    const audioFiles = ['./lessons/op-maat-gemaakt/mp3-80-bpm/click.mp3',
+      './lessons/88-michael-row-the-boat/mp3-80-bpm/0-4.mp3',
+      './lessons/88-michael-row-the-boat/mp3-116-bpm/0-2.mp3'];
 
     const fileCount = audioFiles.length;
     let errors;
@@ -41,10 +37,10 @@ function App() {
             console.log('%c All buffers loaded!', 'color:green');
             //resolve(audioBuffers);
 
-            init(audioBuffers, file, bpm);
+            init(audioBuffers, file, 80);
 
             // players.current[2] = new Player({
-            //   'url': audioBuffers['http://localhost:3000/lessons/88-michael-row-the-boat/mp3-116-bpm/0-2.mp3']
+            //   'url': audioBuffers['/public/lessons/88-michael-row-the-boat/mp3-116-bpm/0-2.mp3']
             // }).toDestination().sync().start('4m');
 
             // Transport.schedule((time) => {
@@ -72,19 +68,33 @@ function App() {
 
   const init = (audioBuffers, file, bpm) => {
     console.log("init()");
-    //// add click sound to the player.
-    players.current[1] = new Player({
-      url: audioBuffers['http://localhost:3000/lessons/op-maat-gemaakt/mp3-80-bpm/click.mp3'],
-    }).toDestination();
 
     Transport.bpm.value = bpm;
+
+    //// add click sound to the player.
+    players.current[0] = new Player({
+      url: audioBuffers['./lessons/op-maat-gemaakt/mp3-80-bpm/click.mp3'],
+    }).toDestination();
+
     Transport.scheduleRepeat(function (time) {
-      players.current[1].start(time);
+      players.current[0].start(time);
     }, '4n'); // '1m'
 
-    players.current[0] = new Player({
+    Transport.schedule(function (time) {
+      Transport.bpm.value = 116;
+    }, '5m');
+
+    players.current[1] = new Player({
       'url': audioBuffers[file]
     }).toDestination().sync().start();
+
+    players.current[2] = new Player({
+      'url': audioBuffers['./lessons/88-michael-row-the-boat/mp3-116-bpm/0-2.mp3']
+    }).toDestination();
+    players.current[3] = new Player({
+      'url': audioBuffers['./lessons/88-michael-row-the-boat/mp3-116-bpm/0-2.mp3']
+    }).toDestination().sync().start('5m');
+
   }
 
   const reset = () => {
@@ -92,10 +102,12 @@ function App() {
     Transport.cancel();
     players.current[0].dispose();
     players.current[1].dispose();
+    players.current[2].dispose();
     // players.current[2].dispose();
 
     //setLoad(!load);
   }
+
 
   return (
 
@@ -104,29 +116,53 @@ function App() {
       <button onClick={() => {
         // reset();
 
+
+        Transport.stop();
+        Transport.bpm.value = 80;
+
+        players.current[1].unsync();
+        players.current[1].buffer = audioBuffers['./lessons/88-michael-row-the-boat/mp3-80-bpm/0-4.mp3'];
+        players.current[1].sync().start(0);
+
+        // players.current[2].sync().start();
+
+        Transport.start();
+
         // Transport.bpm.value = 80;
         // Transport.position = '0:0:0'
         // Transport.start();
         //reset();
         // setBpm(80);
-        //setFile('http://localhost:3000/lessons/88-michael-row-the-boat/mp3-80-bpm/0-4.mp3');
-        reset();
-        init(audioBuffers, 'http://localhost:3000/lessons/88-michael-row-the-boat/mp3-80-bpm/0-4.mp3', 80);
-        Transport.start();
+        //setFile('/public/lessons/88-michael-row-the-boat/mp3-80-bpm/0-4.mp3');
+        // reset();
+        // init(audioBuffers, './lessons/88-michael-row-the-boat/mp3-80-bpm/0-4.mp3', 80);
+        // Transport.start();
         // setPosition('0:0:0');
 
         // setLoad(!load);
       }} >Transport.posistion('0:0:0')</button>
       <button onClick={() => {
-        //  reset();
+
+        Transport.stop();
+
+        Transport.bpm.value = 116;
+
+        players.current[1].unsync();
+        players.current[1].buffer = audioBuffers['./lessons/88-michael-row-the-boat/mp3-116-bpm/0-2.mp3'];
+        players.current[1].sync().start(0);
+
+        // players.current[2].sync().start();
+
+        Transport.start();
 
         // Transport.bpm.value = 116;
-        // Transport.position = '4:0:0'
+        // Transport.position = '4:0:0';
+        // reset();
         // Transport.start();
         // setBpm(116);
-        reset();
-        init(audioBuffers, 'http://localhost:3000/lessons/88-michael-row-the-boat/mp3-116-bpm/0-2.mp3', 116);
-        Transport.start();
+        // reset();
+        //   init(audioBuffers, './lessons/88-michael-row-the-boat/mp3-116-bpm/0-2.mp3', 116);
+        // Transport.start();
 
         // setPosition('4:0:0');
       }} >Transport.posistion('4:0:0')</button>
